@@ -25,5 +25,5 @@ int main(){
 
 male object1;
 cout << object1.height << endl;
-return 0;
+return 0
 };
