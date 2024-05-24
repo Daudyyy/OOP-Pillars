@@ -51,11 +51,11 @@ int main(){
     cout << d.age << endl;
 
     return 0;
-}
+};
 
 }
 
-//Multi-Level
+//Multi-Level Inheritance
 
 class Animal{   //first class
 
@@ -82,6 +82,43 @@ int main(){
     cout << d.age << endl;
 
     return 0;
-}
+};
 
 }
+
+//Multiple Inheritance
+
+class Human{
+
+    public:
+    string name;
+
+    public:
+    void speak(){
+        cout << "speaking" << endl;
+    }
+};
+
+class Animal{
+
+    public:
+    int age;
+    int weight;
+
+    public:
+    void bark(){
+        cout << "Barking" << endl;
+    }
+};
+
+class Hybrid: public Human, public Animal{
+
+};
+
+int main(){
+    Hybrid obj1;
+    obj1.speak();
+    obj1.bark();
+
+    return 0;
+};
